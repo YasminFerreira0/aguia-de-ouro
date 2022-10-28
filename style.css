@@ -1,0 +1,31 @@
+
+.logo {
+    display: flex;
+    background-color: rgb(249, 255, 230);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.16) ;
+}
+.logo-img {
+    width: 80px;
+}
+
+.container {
+    background-color: rgba(248, 245, 88, 0.63);
+    display: flex;
+}
+
+.introducao {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.introducao-texto {
+    width: 400px;
+}
+.imagem-introducao {
+    width: 300px;
+}
