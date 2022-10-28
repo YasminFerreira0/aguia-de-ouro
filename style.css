@@ -1,31 +1,89 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
 
 .logo {
     display: flex;
-    background-color: rgb(249, 255, 230);
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.16) ;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.16);
 }
 .logo-img {
     width: 80px;
 }
 
-.container {
-    background-color: rgba(248, 245, 88, 0.63);
-    display: flex;
-}
 
 .introducao {
     display: flex;
+    background-color: #ffd726c0;
     flex-direction: row;
     width: 100vw;
+    height: 30vh;
     justify-content: center;
     align-items: center;
 }
 
 .introducao-texto {
-    width: 400px;
+    width: 40vw;
 }
+
 .imagem-introducao {
-    width: 300px;
+    width: 30vw;
+}
+
+.galeria {
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    background-color: #82b4bdd8;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #252525;
+}
+
+.contatos {
+    background-color:  #252525;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
+
+.contatos--caixa {
+    width: 40vw;
+}
+
+.contatos--localizacao {
+    width: 40vw;
+}
+
+.localizacao {
+    width: 40vw;
+    height: 30vh;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-rodape {
+    width: 60px;
+}
+
+.texto-rodape {
+    margin: 0 20px;
+}
+
+.texto-rodape a {
+    text-decoration: none;
+    color: #000000;
 }
