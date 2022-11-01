@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 .logo {
@@ -9,7 +10,7 @@
     box-shadow: 0px 15px 6px rgb(0, 0, 0);
 }
 .logo-img {
-    width: 80px;
+    width: 75px;
 }
 
 main {
@@ -21,18 +22,29 @@ main {
 .introducao {
     display: flex;
     flex-direction: row;
-    height: 400px;
+    height: 300px;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .introducao-texto {
-    width: 40vw;
+    width: 30vw;
     color: #0a0e36;
 }
 
 .imagem-introducao {
     width: 30vw;
+}
+
+@media screen and (max-width: 480px) {
+    .introducao-texto {
+        width: 80vw;
+        text-align: center;
+    }
+    
+    .imagem-introducao {
+        display: none;
+    }
 }
 
 .galeria {
@@ -44,10 +56,23 @@ main {
 }
 
 .foto {
-    width: 300px;
-    height: 250px;
-    border-radius: 25px;
+    width: 20vw;
+    height: 200px;
+    border-radius: 20px;
     box-shadow: 5px 5px 5px #252525;
+}
+
+@media screen and (max-width: 480px) {
+    .galeria {
+        display: flex;
+        height: 700px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .foto {
+        width: 80vw;
+    }
 }
 
 .contatos {
@@ -55,7 +80,6 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: baseline;
-    
     height: 400px;
 }
 
@@ -70,8 +94,31 @@ main {
 }
 
 .localizacao {
-    width: 39vw;
-    height: 300px;
+    width: 35vw;
+    height: 250px;
+}
+
+@media screen and (max-width: 480px) {
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 550px;
+        padding: 50px 0;
+    }
+
+    .contatos--caixa {
+        width: 80vw;
+    }
+
+    .contatos--localizacao {
+        width: 80vw;
+    }
+    .localizacao {
+        width: 75vw;
+        height: 250px;
+    }
 }
 
 .rodape {
@@ -86,9 +133,14 @@ main {
 
 .texto-rodape {
     margin: 0 20px;
+    font-size: 15px;
 }
 
-.texto-rodape a {
-    text-decoration: none;
-    color: #000000;
+@media screen and (max-width: 480px) {
+    .logo-rodape {
+        width: 50px;
+    }
+    .texto-rodape {
+        font-size: 12px;
+    }
 }
